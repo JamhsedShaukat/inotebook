@@ -70,15 +70,26 @@ Folder Structure
 bash
 Copy code
 iNoteBook/
+
 │
-├── frontend/              # React.js frontend files
-├── backend/               # Express.js backend files
-├── models/                # Mongoose models
-│   ├── Notes.js           # Notes model
-│   └── User.js            # User model
-├── middleware/            # Middleware functions
-│   └── fetchuser.js       # Fetch user middleware
-├── images/                # Images used in the frontend
-└── db.js                  # MongoDB connection setup
+├── frontend/  
+# React.js frontend files
+├── backend/   
+# Express.js backend files
+├── models/    
+# Mongoose models
+
+│   ├── Notes.js   
+# Notes model
+│   └── User.js    
+# User model
+├── middleware/     
+# Middleware functions
+│   └── fetchuser.js   
+# Fetch user middleware
+├── images/        
+# Images used in the frontend
+└── db.js          
+# MongoDB connection setup
 Credits
 This project is inspired by various tutorials and guides on React.js and Express.js development.
