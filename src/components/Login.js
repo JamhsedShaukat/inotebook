@@ -58,20 +58,24 @@ const Login = (props) => {
         height: "100vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        position:"fixed",
+        justifyContent: "flex-start",
+        padding:"30px 0",
         alignItems: "center",
+        alignContent:"center",
         textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Add text shadow for better visibility
         backdropFilter: "blur(5px)", // Add blur effect
       }}
     >
-    <div className="container">
-      <h2 className="mb-3">Login to continue to INoteBook </h2>
-      <form className="mt-2" onSubmit={handleSubmit}>
-        <div className="mb-4">
+    <div className=" position-fixed ">
+      <h2 className=" my-4 text-center">Login to continue to INoteBook</h2>
+      <form className="my-4 w-100 h-75 bg-light p-4 " onSubmit={handleSubmit}>
+        <div className="my-4">
           <label htmlFor="email" className="form-label">
             Email address
           </label>
           <input
+          placeholder="Enter your Email"
             type="email"
             className="form-control"
             id="email"
@@ -89,6 +93,7 @@ const Login = (props) => {
             Password
           </label>
           <input
+          placeholder="Enter your Password"
             type="password"
             className="form-control"
             id="password"
@@ -97,7 +102,7 @@ const Login = (props) => {
             onChange={onChange}
           />
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary mt-2 align-item-center">
           Submit
         </button>
       </form>

@@ -1,9 +1,11 @@
 // App.js
 
 import "./App.css";
+// index.js or App.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Navebar from "./components/Navebar";
 import { Home } from "./components/Home.js";
 import About from "./components/About.js";
@@ -48,3 +50,5 @@ function App() {
 }
 
 export default App;
+
+//to start server " npm sun both "

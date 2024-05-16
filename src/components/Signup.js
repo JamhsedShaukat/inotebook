@@ -62,15 +62,16 @@ const Signup = (props) => {
         height: "100vh",
         display: "flex",
         flexDirection: "column",
-        // justifyContent: "center",
-        // alignItems: "center",
+        justifyContent: "flex-start",
+        position:"fixed",
+        alignItems: "center",
         textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Add text shadow for better visibility
         backdropFilter: "blur(5px)", // Add blur effect
       }}
     >
-    <div className="container my-5">
+    <div className=" my-2">
             <h2 className="mb-3">SignUp to continue to INoteBook </h2>
-      <form onSubmit={handleSubmit}>
+      <form className="my-4 w-100 h-75 bg-light p-4" onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
             Name
@@ -128,7 +129,7 @@ const Signup = (props) => {
             onChange={onChange}
           />
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary my-2">
           Submit
         </button>
       </form>

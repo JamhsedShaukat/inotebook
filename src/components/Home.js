@@ -21,12 +21,12 @@ const containerVariants = {
       className=""
       style={{
         
-        background: `url(${backgroundImage}) center/cover no-repeat fixed`,
+        background: `url(${backgroundImage}) center/cover no-repeat `,
         color: "#000", // Darker shade of green, adjust as needed
-        // padding: "20px",
+        padding: "20px",
         backgroundAttachment: 'fixed',
         width: "100vw",
-        height: "100vh",
+        // height: "100vh",
         display: "flex",
         flexDirection: "column",
         // justifyContent: "center",
